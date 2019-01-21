@@ -13,10 +13,10 @@ download() {
   ARCHIVE_FILE=${DOWNLOAD_URL##*/}
 
   # Download systemd-boot source archive in the 'source' directory.
-  download_source $DOWNLOAD_URL $SOURCE_DIR/$ARCHIVE_FILE
+  download_source $DOWNLOAD_URL $SOURCE_DIR/systemd-boot-master.tar.gz
 
   # Extract the 'systemd-boot' sources in the 'work/systemd-boot' directory.
-  extract_source $SOURCE_DIR/$ARCHIVE_FILE systemd-boot  
+  extract_source $SOURCE_DIR/systemd-boot-master.tar.gz systemd-boot  
 }
 
 echo "*** GET SYSTEMD-BOOT BEGIN ***"
